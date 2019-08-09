@@ -5,21 +5,23 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "postinstall": "rndebugger-open"
+    "postinstall": "rndebugger-open",
+    "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug"
   },
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.9",
+    "react-native-navigation": "^3.0.0-alpha.7-snapshot.434",
     "react-native-vector-icons": "^6.6.0",
     "react-redux": "^7.1.0",
-    "redux": "^4.0.1"
+    "redux": "^4.0.4"
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
     "@babel/runtime": "7.4.5",
     "babel-jest": "24.8.0",
     "jest": "24.8.0",
-    "metro-react-native-babel-preset": "0.54.1",
+    "metro-react-native-babel-preset": "0.51.0",
     "react-native-debugger-open": "^0.3.19",
     "react-test-renderer": "16.8.3"
   },
