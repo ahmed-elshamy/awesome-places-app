@@ -11,7 +11,11 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.9",
+<<<<<<< HEAD
     "react-native-navigation": "^3.0.0-alpha.7-snapshot.434",
+=======
+    "react-native-navigation": "^3.0.0-alpha.4",
+>>>>>>> 5b58bc34b9a7f317467161a7f5027a27c666fa09
     "react-native-vector-icons": "^6.6.0",
     "react-redux": "^7.1.0",
     "redux": "^4.0.4"
