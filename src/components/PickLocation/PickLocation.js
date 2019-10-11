@@ -30,6 +30,10 @@ class PickLocation extends Component{
                 locationChosen: true
             };
         });
+        this.props.onLocationPick({
+            latitude: coords.latitude,
+            longitude: coords.longitude
+        });
     };
 
     getLocationHandler = () => {
@@ -68,7 +72,7 @@ class PickLocation extends Component{
                     {marker}
                 </MapView>
                 <View style={styles.button}>
-                    <Button title="Locate Me" onPress={() => alert('Pick Location!')} />
+                    <Button title="Locate Me" onPress={this.getLocationHandler} />
                 </View>
             </View>
         );
