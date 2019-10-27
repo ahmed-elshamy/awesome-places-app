@@ -15,7 +15,8 @@ Navigation.registerComponentWithRedux("awesome-places.AuthScreen", () => AuthScr
 Navigation.registerComponentWithRedux("awesome-places.SharePlaceScreen", () => SharePlaceScreen, Provider, store);
 Navigation.registerComponentWithRedux("awesome-places.FindPlaceScreen", () => FindPlaceScreen, Provider, store);
 Navigation.registerComponentWithRedux("awesome-places.PlaceDetailScreen", () => PlaceDetailScreen, Provider, store);
-Navigation.registerComponent("awesome-places.SideDrawer", () => SideDrawer);
+Navigation.registerComponentWithRedux("awesome-places.SideDrawer", () => SideDrawer, Provider, store);
+// Navigation.registerComponent("awesome-places.SideDrawer", () => SideDrawer);
 
 // Start a App
 // Navigation.startSingleScreenApp({
@@ -25,8 +26,8 @@ Navigation.registerComponent("awesome-places.SideDrawer", () => SideDrawer);
 //     }
 // });
 
-Navigation.events().registerAppLaunchedListener(() => {
-    Navigation.setRoot({
+// export default () => Navigation.events().registerAppLaunchedListener(() => {
+    export default () => Navigation.setRoot({
         root: {
             stack: {
                 children: [
@@ -46,4 +47,4 @@ Navigation.events().registerAppLaunchedListener(() => {
             }
         }
     });
-});
+// });
