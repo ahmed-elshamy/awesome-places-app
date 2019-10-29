@@ -17,11 +17,19 @@ class FindPlaceScreen extends Component{
         super(props);
 
         Navigation.events().bindComponent(this);
-        this.isSideDrawerVisible = false;
+        //this.isSideDrawerVisible = false;
     }
 
-    componentDidMount(){
+    //componentDidMount(){
+        //this.props.onLoadPlaces();
+        //this.navigationEventListener = Navigation.events().bindComponent(this);//componentDidAppear
+    //}
+
+    componentDidAppear() {//related to bindComponent
         this.props.onLoadPlaces();
+        // this.setState({
+        //     placesLoaded: false
+        // });
     }
 
     navigationButtonPressed({ buttonId }) {

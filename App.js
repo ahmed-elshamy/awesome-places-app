@@ -26,7 +26,8 @@ Navigation.registerComponentWithRedux("awesome-places.SideDrawer", () => SideDra
 //     }
 // });
 
-// export default () => Navigation.events().registerAppLaunchedListener(() => {
+//important :- registerAppLaunchedListener
+// Navigation.events().registerAppLaunchedListener(() => {
     export default () => Navigation.setRoot({
         root: {
             stack: {
